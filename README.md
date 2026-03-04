@@ -104,6 +104,7 @@ Geographic Distribution: The pie chart reveals the relative weight of each count
 
 Cross-Regional Patterns: The highlight table identifies specific niches where certain categories outperform others in specific countries.
 
+<img width="3166" height="1155" alt="Captura de pantalla 2026-03-04 122717" src="https://github.com/user-attachments/assets/5156b3a1-8805-45d9-b7e7-20b0755152ea" />
 
 ---
 
