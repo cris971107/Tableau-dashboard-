@@ -75,11 +75,6 @@ Calculated Fields: Developed Table Calculations to compute the "Percent of Total
 Filtering Logic: Implemented global filters for trending_date and region to ensure synchronized interactivity across all dashboard components.
 
 
-`visuals/Captura de pantalla 2026-03-04 000520.png`
-
-
-<img width="1237" height="347" alt="Captura de pantalla 2026-03-04 000520" src="https://github.com/user-attachments/assets/099547b0-04fa-453f-9509-09ed71cd0560" />
-
 ---
 
 
@@ -110,10 +105,6 @@ Geographic Distribution: The pie chart reveals the relative weight of each count
 Cross-Regional Patterns: The highlight table identifies specific niches where certain categories outperform others in specific countries.
 
 
-`visuals/Captura de pantalla 2026-03-03 234335.png`
-
-<img width="1013" height="541" alt="Captura de pantalla 2026-03-03 234335" src="https://github.com/user-attachments/assets/2779e75f-c676-41e7-954f-43ae299933a9" />
-
 ---
 
 
@@ -121,7 +112,7 @@ Cross-Regional Patterns: The highlight table identifies specific niches where ce
 
 | Deliverable | Description | Location |
 |-------------|-------------|----------|
-| Dashboard | Dashboard in tableau | `notebooks/Sprint-15S-2.ipynb` |
+| Dashboard | Dashboard in tableau | `visuals/Captura de pantalla 2026-03-04 122717.png` |
 
 
 
