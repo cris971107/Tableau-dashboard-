@@ -53,7 +53,7 @@ Clean and process raw CSV interaction data within Tableau to ensure metrics such
 [project-root]/
 │
 ├── docs/                     # Original, unmodified source data - never edited
-││
+│
 └── visuals/                  # Exported charts, dashboard screenshots, ERD diagrams
 
 
