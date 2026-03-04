@@ -103,11 +103,11 @@ Filtering Logic: Implemented global filters for trending_date and region to ensu
   Aim for 3–6 insights. Quality over quantity.
 -->
 
-Category Dominance: The 100% stacked area chart allows managers to see the "market share" of categories like Entertainment or Music, regardless of total volume fluctuations.
+Market Share: The 100% stacked area chart identifies the "market share" of categories like Entertainment or Music, regardless of total volume fluctuations.
 
-Geographic Distribution: The pie chart reveals the relative weight of each country (US, CA, GB) in the trending ecosystem.
+Geographic Weight: The pie chart reveals the relative weight of each country in the trending ecosystem, highlighting where the most viral events occur.
 
-Cross-Regional Patterns: The highlight table identifies specific niches where certain categories outperform others in specific countries.
+Cross-Regional Patterns: The highlight table identifies specific niches where certain categories outperform others in specific countries through conditional color formatting.
 
 <img width="3166" height="1155" alt="Captura de pantalla 2026-03-04 122717" src="https://github.com/user-attachments/assets/5156b3a1-8805-45d9-b7e7-20b0755152ea" />
 
@@ -118,7 +118,7 @@ Cross-Regional Patterns: The highlight table identifies specific niches where ce
 
 | Deliverable | Description | Location |
 |-------------|-------------|----------|
-| Dashboard | Dashboard in tableau | `visuals/Captura de pantalla 2026-03-04 122717.png` |
+| Dashboard | A detailed report containing the visual analysis, an explanation of each chart's purpose | `deliverables/Tendencias de You tube.pdf` |
 
 
 
