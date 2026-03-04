@@ -1,5 +1,6 @@
 # YouTube Trending Analysis Dashboard
-This project analyzes a dataset of 1,155 records of YouTube trending videos. Using Tableau, I developed a strategic dashboard for Advertising Planning Managers to identify which content categories are dominating specific regions, allowing for data-driven ad placement.---
+This project analyzes a dataset of 1,155 records of YouTube trending videos. Using Tableau, I developed a strategic dashboard for Advertising Planning Managers to identify which content categories are dominating specific regions, allowing for data-driven ad placement.
+---
 
 ## ⚙️ Project Type Flags
 
