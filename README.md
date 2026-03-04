@@ -5,11 +5,11 @@ Analyzed the performance of a new recommendation engine through an A/B test to d
 ## ⚙️ Project Type Flags
 
 - [x] Exploratory Data Analysis (EDA)
-- [x] SQL Analysis / Querying
+- [ ] SQL Analysis / Querying
 - [x] Dashboard / Data Visualization
 - [ ] Data Pipeline / ETL
 - [ ] Predictive Modelling / Machine Learning
-- [ ] Data Cleaning / Wrangling
+- [x] Data Cleaning / Wrangling
 - [ ] End-to-End (multiple of the above)
 - [ ] Other: ___________
 
@@ -29,21 +29,20 @@ Analyzed the performance of a new recommendation engine through an A/B test to d
 
 ## 1. Project Overview
 
-This report summarizes the statistical evaluation of an A/B test conducted to measure the impact of a new recommendation system on user behavior. By leveraging detailed event logs and user data, the analysis identifies whether the proposed changes successfully optimized the purchasing funnel or adversely affected the user experience.
+This project involves the design and development of an interactive dashboard to analyze historical YouTube trending data. The primary goal is to provide Video Advertising Planning Managers with a tool to identify content trends across different regions over time to optimize ad placement strategies.
 
 ---
 
 ## 2. Objectives
 
 Primary Objective:
-Compare the conversion rates and activity levels of the control group (System A) against the test group (System B).
+Analyze the historical trends of YouTube videos by comparing absolute volumes against percentage-based proportions to identify dominant content categories.
 
 Secondary Objective 1:
-Utilize hypothesis testing (z-tests) to determine if observed differences are statistically significant or merely due to random chance.
+Enable regional market analysis by tracking and visualizing video trends across different countries (US, CA, GB) to support daily advertising planning.
 
 Secondary Objective 2:
-Clean and process raw interaction data to ensure metrics such as total event sums and counts are accurate for final evaluation.
-
+Clean and process raw CSV interaction data within Tableau to ensure metrics such as videos_count and temporal aggregations are accurate for final visualization.
 ---
 
 ## 3. Repository Structure
@@ -68,19 +67,16 @@ Clean and process raw interaction data to ensure metrics such as total event sum
 
 ## 4. Data processing and methodology
 
-The analysis utilized a refined dataset, referred to in the code as res_clean, which aggregated user interactions.
+The data is sourced from the trending_by_time.csv file, which includes record IDs, regions, dates, category titles, and video counts.
 
-Metric Definition: The core metrics focused on the total sum of events (sum) and the frequency of interactions (count) per unique user.
+Data Connection: Established a connection to the CSV file within Tableau Desktop.
 
-Refinement Logic: Data was processed to eliminate outliers and ensure that only relevant events within the experimental window were included in the final z-test.
+Data Wrangling: Converted the trending_date field into a standardized Date/Time format for accurate time-series analysis.
 
-# Methods Used
+Calculated Fields: Developed Table Calculations to compute the "Percent of Total" for the relative trend history area chart.
 
-Descriptive statistics for event distribution per user.
+Filtering Logic: Implemented global filters for trending_date and region to ensure synchronized interactivity across all dashboard components.
 
-Funnel analysis (Login -> Product Page -> Cart -> Purchase).
-
-Z-test for independent proportions (Alpha = 0.05).
 
 `visuals/Captura de pantalla 2026-03-04 000520.png`
 
@@ -110,13 +106,15 @@ Z-test for independent proportions (Alpha = 0.05).
   Aim for 3–6 insights. Quality over quantity.
 -->
 
-The data revealed a clear trend regarding the experimental group:
+Category Dominance: The 100% stacked area chart allows managers to see the "market share" of categories like Entertainment or Music, regardless of total volume fluctuations.
 
-Performance Degradation: The new system did not just fail to improve metrics; it actively worsened the user experience or the efficiency of the purchase funnel.
+Geographic Distribution: The pie chart reveals the relative weight of each country (US, CA, GB) in the trending ecosystem.
 
-Statistical Confidence: The p-value decreased slightly during the final stages of analysis. In statistical terms, a lower p-value strengthens the rejection of the null hypothesis, confirming that the negative impact observed was not a random fluke but a consistent result of the new system.
+Cross-Regional Patterns: The highlight table identifies specific niches where certain categories outperform others in specific countries.
+
 
 `visuals/Captura de pantalla 2026-03-03 234335.png`
+
 <img width="1013" height="541" alt="Captura de pantalla 2026-03-03 234335" src="https://github.com/user-attachments/assets/2779e75f-c676-41e7-954f-43ae299933a9" />
 
 ---
@@ -126,7 +124,7 @@ Statistical Confidence: The p-value decreased slightly during the final stages o
 
 | Deliverable | Description | Location |
 |-------------|-------------|----------|
-| Code | Jupyter Notebook containing EDA, Funnel Visualizations, and Z-test results. | `notebooks/Sprint-15S-2.ipynb` |
+| Dashboard | Dashboard in tableau | `notebooks/Sprint-15S-2.ipynb` |
 
 
 
@@ -135,9 +133,7 @@ Statistical Confidence: The p-value decreased slightly during the final stages o
 
 ## 7. Final verdict and recommendations
 
-Result: The A/B test is considered a failure in terms of optimization.
-
-Action: It is strongly recommended not to deploy the new recommendation system. Further investigation is needed to understand why the algorithm interfered with the purchase process.
+Result: Verdict: The dashboard successfully integrates temporal, categorical, and geographical data, providing a specialized tool for daily marketing planning.
 
 
 ---
